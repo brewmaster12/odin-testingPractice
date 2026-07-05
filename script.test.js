@@ -1,7 +1,8 @@
 import { 
     capitalise,
     reverseString,
-    calculator
+    calculator,
+    caesarCipher
 } from './script';
 
 test("Capitalises first letter", () => {
