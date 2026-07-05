@@ -3,6 +3,11 @@ function capitalise(string) {
     + string.slice(1);
 }
 
+function reverseString(string) {
+    return string.split("").reverse().join("");
+}
+
 export {
-    capitalise
+    capitalise,
+    reverseString,
 }
