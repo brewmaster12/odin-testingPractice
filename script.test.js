@@ -1,6 +1,7 @@
 import { 
     capitalise,
-    reverseString
+    reverseString,
+    calculator
 } from './script';
 
 test("Capitalises first letter", () => {
@@ -9,4 +10,11 @@ test("Capitalises first letter", () => {
 
 test("Reverses a string", () => {
     expect(reverseString("Samantha")).toBe("ahtnamaS")
+})
+
+test("Calculate two ints", () => {
+    expect(calculator.add(5, 7)).toBe(12);
+    expect(calculator.subtract(5, 7)).toBe(-2);
+    expect(calculator.divide(10, 2)).toBe(5);
+    expect(calculator.multiply(3, 6)).toBe(18);
 })
