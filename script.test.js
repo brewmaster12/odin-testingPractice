@@ -18,3 +18,9 @@ test("Calculate two ints", () => {
     expect(calculator.divide(10, 2)).toBe(5);
     expect(calculator.multiply(3, 6)).toBe(18);
 })
+
+test("Caesar cipher a string", () => {
+    expect(caesarCipher("xyz", 3)).toBe("abc");
+    expect(caesarCipher("HeLLo", 3)).toBe("KhOOr");
+    expect(caesarCipher("Hello, World!", 3)).toBe("Khoor, Zruog!");
+})
